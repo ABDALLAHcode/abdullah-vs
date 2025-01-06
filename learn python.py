@@ -1,6 +1,6 @@
 num1=float(input('enter first num:'))
 
-opy=input('enter opreation:')
+opy=input('enter opration:')
 
 num2=float(input('enter second num:'))
 
@@ -12,11 +12,20 @@ elif opy == '*':
     print(num1*num2)
 elif opy == '**':
     print(num1**num2)
-elif opy == '/':
-    print(num1/num2)
+elif opy=='/': 
+   if num2==0:
+        print('ERORR')
+   else:
+       print(num1/num2)
 elif opy == '//':
-    print(num1//num2)
+    if num2==0:
+        print('ERORR')
+    else:
+     print(num1//num2)
 elif opy == '%':
-    print(num1%num2)
+    if num2==0:
+        print('ERORR')
+    else:
+      print(num1%num2)
 else:
     print('enter value correct')
